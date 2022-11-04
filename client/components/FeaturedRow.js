@@ -13,7 +13,7 @@ const FeaturedRow = ({id,title,description}) => {
     {id}).then((data)=>{
       setRestaurants(data?.restaurants);
     });
-  },[]);
+  },[id]);
  
   return (
     <View>
